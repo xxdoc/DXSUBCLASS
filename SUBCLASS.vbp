@@ -8,7 +8,7 @@ Startup="(None)"
 HelpFile=""
 Title="SUBCLASS"
 ExeName32="SUBCLASS.dll"
-Path32=""
+Path32="\\Vboxsvr\backup\VB6 Projects\SUBCLASS\VBSUBCLASS"
 Command32=""
 Name="VBSUBCLASS"
 HelpContextID="0"
@@ -24,15 +24,16 @@ VersionCompanyName="DEXWERX"
 VersionFileDescription="IDE Safe Subclassing for VB6"
 VersionLegalCopyright="Copyright © 2015 Dexter Freivald. All Rights Reserved. DEXWERX.COM"
 VersionProductName="SUBCLASS"
+CondComp="IDEDEBUGCHECK = 1"
 CompilationType=0
 OptimizationType=0
-FavorPentiumPro(tm)=0
+FavorPentiumPro(tm)=-1
 CodeViewDebugInfo=0
 NoAliasing=0
 BoundsCheck=0
 OverflowCheck=0
 FlPointCheck=0
-FDIVCheck=0
+FDIVCheck=-1
 UnroundedFP=0
 StartMode=1
 Unattended=0
@@ -41,5 +42,3 @@ ThreadPerObject=0
 MaxNumberOfThreads=1
 ThreadingModel=1
 DebugStartupOption=0
-
-

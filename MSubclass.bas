@@ -12,8 +12,6 @@ Attribute VB_Name = "MSubClass"
 '
 Option Explicit
 
-#Const IDEDEBUGCHECK = True
-
 #If IDEDEBUGCHECK Then
 Private Enum EVBABREAKMODE
     VB_STOPPED = 0
