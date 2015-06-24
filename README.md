@@ -1,4 +1,4 @@
-# VBSUBCLASS
+# DXSUBCLASS
 Robust Subclassing DLL for debugging in the VB6 IDE
 
 * All Visual Basic
