@@ -216,9 +216,8 @@ pip-log.txt
 .mr.developer.cfg
 
 # Visual Basic 6
-.vbw
-.lib
-.exp
+*.vbw
+*.lib
 *.exp
 *.lib
 *.exp
