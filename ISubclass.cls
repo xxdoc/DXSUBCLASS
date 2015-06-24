@@ -11,7 +11,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = True
-' Copyright © 2014 Dexter Freivald. All Rights Reserved. DEXWERX.COM
+' Copyright © 2015 Dexter Freivald. All Rights Reserved. DEXWERX.COM
 '
 ' ISubclass.cls
 '

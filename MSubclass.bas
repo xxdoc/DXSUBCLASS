@@ -4,8 +4,8 @@ Attribute VB_Name = "MSubClass"
 ' MSubclass.bas
 '
 ' Subclassing Routines
-'   - Dependancy: ISubclass.cls, vba6.dll (VB6 IDE)
-'   - Set IDEDEBUGCHECK = False if used outside of DLL
+'   - Dependancy: ISubclass.cls
+'   - Set IDEDEBUGCHECK = 0 if used outside of DLL
 '   - Checks EbMode to determine whether or not to call subclass proc from within the IDE
 '   - Windows handles unchaining the Message Subclassing
 '   - Alias functions to comctl32.dll #410 #412 #413 for Windows 98/ME/2K
