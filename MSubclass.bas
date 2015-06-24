@@ -12,7 +12,7 @@ Attribute VB_Name = "MSubClass"
 '
 Option Explicit
 
-#If IDEDEBUGCHECK Then
+#If DEBUG_MODE Then
 Private Enum EVBABREAKMODE
     VB_STOPPED = 0
     VB_RUN = 1
@@ -34,7 +34,7 @@ Private Function SubclassProc(ByVal hWnd As Long, _
                               ByVal lParam As Long, _
                               ByVal uIdSubclass As ISubclass, _
                               ByVal dwRefData As Long) As Long
-#If IDEDEBUGCHECK Then
+#If DEBUG_MODE Then
     Select Case EbMode
     Case VB_RUN:        SubclassProc = uIdSubclass.SubclassProc(hWnd, uMsg, wParam, lParam, dwRefData): Exit Function
     Case VB_STOPPED:    Call RemoveSubclass(hWnd, uIdSubclass)

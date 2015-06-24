@@ -23,7 +23,7 @@ VersionCompanyName="DEXWERX"
 VersionFileDescription="IDE Safe Subclassing for VB6"
 VersionLegalCopyright="Copyright © 2015 Dexter Freivald. All Rights Reserved. DEXWERX.COM"
 VersionProductName="SUBCLASS"
-CondComp="IDEDEBUGCHECK = 1"
+CondComp="DEBUG_MODE = 1"
 CompilationType=0
 OptimizationType=0
 FavorPentiumPro(tm)=-1
