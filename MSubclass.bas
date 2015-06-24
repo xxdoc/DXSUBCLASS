@@ -36,8 +36,8 @@ Private Function SubclassProc(ByVal hWnd As Long, _
                               ByVal dwRefData As Long) As Long
 #If IDEDEBUGCHECK Then
     Select Case EbMode
-    Case VB_STOPPED:    Call RemoveSubclass(hWnd, uIdSubclass)
     Case VB_RUN:        SubclassProc = uIdSubclass.SubclassProc(hWnd, uMsg, wParam, lParam, dwRefData): Exit Function
+    Case VB_STOPPED:    Call RemoveSubclass(hWnd, uIdSubclass)
     End Select
     SubclassProc = DefSubclassProc(hWnd, uMsg, wParam, lParam)
 #Else

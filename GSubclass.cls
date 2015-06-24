@@ -15,11 +15,10 @@ Attribute VB_Exposed = True
 '
 ' GSubclass.bas
 '
-' Global use Subclassing Interface to our DLL
+' Global use Subclassing Interface to the DLL
 '   - Dependancy: ISubclass.cls, MSubclass.bas
-'   - Only for use with VB6 IDE
-'   - DLL is used for more stable debugging in the VB6 IDE
-'   - Windows handles unchaining the Message Subclassing
+'   - Forward the calls to MSubclass
+'   - Release versions call MSubclass directly
 '
 Option Explicit
 
