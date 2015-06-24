@@ -219,3 +219,6 @@ pip-log.txt
 .vbw
 .lib
 .exp
+*.exp
+*.lib
+*.exp
