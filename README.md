@@ -9,3 +9,4 @@ Robust Subclassing DLL for debugging in the VB6 IDE
 * No Assembly, Dispatching Stubs, or Self Modifying code
 * DEBUG_MODE checks VB6 IDE Break Mode before dispatching (vba6.dll#EbMode).
 * Set Compilation Argument DEBUG_MODE = 0, if compiling for release distribution
+* See CMinMax.cls for usage
