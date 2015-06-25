@@ -15,10 +15,9 @@ Attribute VB_Exposed = True
 '
 ' GSubclass.bas
 '
-' Global use Subclassing Interface to the DLL
+' Global Subclassing Interface to the DLL
 '   - Dependancy: ISubclass.cls, MSubclass.bas
-'   - Forward the calls to MSubclass
-'   - Release versions call MSubclass directly
+'   - Forwards calls to MSubclass
 '
 Option Explicit
 

@@ -5,7 +5,8 @@ Attribute VB_Name = "MSubClass"
 '
 ' Subclassing Routines
 '   - Dependancy: ISubclass.cls
-'   - Set IDEDEBUGCHECK = 0 if used outside of DLL
+'   - Adapted from Karl E. Peterson --> http://vb.mvps.org/samples/HookXP/
+'   - Set DEBUG_MODE = 0 if used outside of DLL
 '   - Checks EbMode to determine whether or not to call subclass proc from within the IDE
 '   - Windows handles unchaining the Message Subclassing
 '   - Alias functions to comctl32.dll #410 #412 #413 for Windows 98/ME/2K
@@ -38,6 +39,7 @@ Private Function SubclassProc(ByVal hWnd As Long, _
     Select Case EbMode
     Case VB_RUN:        SubclassProc = uIdSubclass.SubclassProc(hWnd, uMsg, wParam, lParam, dwRefData): Exit Function
     Case VB_STOPPED:    Call RemoveSubclass(hWnd, uIdSubclass)
+    Case VB_BREAK:
     End Select
     SubclassProc = DefSubclassProc(hWnd, uMsg, wParam, lParam)
 #Else
