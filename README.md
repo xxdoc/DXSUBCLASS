@@ -1,7 +1,7 @@
 # DXSUBCLASS
 Robust Subclassing DLL for debugging in the VB6 IDE
 
-* Adapted from Karl E. Peterson --> http://vb.mvps.org/samples/HookXP/
+* Adapted from HookXP by Karl E. Peterson --> http://vb.mvps.org/samples/HookXP/
 * No Assembly, Dispatching Stubs, Thunks or Self Modifying code
 * All Visual Basic (64 lines)
 * Uses Windows subclassing API comctl32.dll#SetWindowSubclass
